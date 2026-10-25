@@ -1,0 +1,86 @@
+.container {
+    width: 100%;
+    margin-top: 20px;
+    padding: 5px;
+}
+
+.tableWrapper {
+    width: 100%;
+    border: 1px solid lightslategray;
+    border-radius: 10px;
+    background: #fff;
+}
+
+.table {
+    width: 100%;
+    min-width: 600px;
+    table-layout: fixed;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+.table th:nth-child(1) {
+    width: 50%;
+}
+
+.table th:nth-child(2) {
+    width: 20%;
+}
+
+.table th:nth-child(3) {
+    width: 30%;
+}
+
+.head {
+    background: #f5f7fa;
+}
+
+.head th {
+    padding: 15px 20px;
+    color: #424a55;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.4;
+    border-bottom: 1px solid #e2e5e9;
+}
+
+.body tr {
+    transition: all 0.15s ease;
+}
+
+.body tr:not(:last-child) {
+    border-bottom: 1px solid #edf0f2;
+}
+
+.body tr:hover {
+    background-color: #f8fafc;
+}
+
+.body td {
+    padding: 16px 20px;
+    color: #303741;
+    font-size: 14px;
+    line-height: 1.5;
+    vertical-align: middle;
+    overflow-wrap: anywhere;
+}
+
+.body td:nth-child(2) {
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.body td:nth-child(3) {
+    color: #515b68;
+}
+
+.analog {
+    padding: 14px 30px !important;
+    background-color: #f0f4f8;
+    color: #344256 ;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+    border-top: 2px solid #dce3eb;
+    border-bottom: 1px solid #dce3eb;
+}

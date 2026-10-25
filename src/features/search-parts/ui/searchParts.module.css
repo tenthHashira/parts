@@ -1,0 +1,65 @@
+.container {
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.form {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.field {
+    position: relative;
+    flex: 1;
+}
+
+.input {
+    border: 1px solid grey;
+    border-radius: 10px;
+    padding: 5px;
+    box-shadow: 0 0 5px  lightblue;
+    width: 100%;
+    transition: all ease 0.15s;
+
+    &:focus {
+        box-shadow: 0 0 10px  lightblue;
+        scale: 1.02;
+    }
+}
+
+.searchLabel {
+    position: absolute;
+    left: 17px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+    transition: opacity ease 0.15s;
+    color:grey;
+}
+
+.iconSearch {
+    box-sizing: border-box;
+}
+
+.button {
+    transition: all ease 0.15s;
+
+    &:active {
+        transform: scale(0.80);
+    }
+}
+
+.input:focus + .searchLabel,
+.filled .searchLabel {
+    opacity: 0;
+}
+
+.notification {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    color: lightslategray;
+    font-size: 16px;
+}

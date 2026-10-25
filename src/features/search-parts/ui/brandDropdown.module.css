@@ -1,0 +1,58 @@
+.dropdownMenu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    margin-top: 4px;
+    background-color: rgba(0, 0, 0, 0.45);
+    backdrop-filter: blur(5px);
+    z-index: 100;
+    box-sizing: border-box;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.brandsList {
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    max-height: 200px;
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.brandList::-webkit-scrollbar {
+    display: none;
+}
+
+.brand {
+    width: 100%;
+    transition: all ease 0.1s;
+
+    &:hover {
+        transform: scale(1.015);
+    }
+}
+
+.brandButton {
+    width: 100%;
+    text-align: left;
+    padding: 10px 15px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    
+    /* Белый цвет текста для контраста */
+    color: rgba(255, 255, 255, 0.9); 
+    font-size: 14px;
+    transition: background-color 0.2s, color 0.2s;
+
+    /* Эффект при наведении на элемент списка */
+    &:hover {
+        background-color: rgba(255, 255, 255, 0.15); /* Слегка подсвечиваем белым */
+        color: #ffffff; /* Делаем текст максимально ярким */
+    }
+}
